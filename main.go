@@ -28,7 +28,6 @@ func randomFileName() string {
 }
 
 func renameFile(filePath string) string {
-    // fileName := strings.Split(filePath, ".")[0]
     filePathDir := strings.Split(filePath, "/")[0]
     extension := strings.Split(filePath, ".")[1]
     newFilePath := filePathDir + "/" + randomFileName() + "." + extension
